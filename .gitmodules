@@ -1,0 +1,105 @@
+[submodule ".config/nvim/bundle/vim-pathogen"]
+	path = .config/nvim/bundle/vim-pathogen
+	url = git@github.com:tpope/vim-pathogen.git
+[submodule ".config/nvim/bundle/nerdtree"]
+	path = .config/nvim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule ".config/nvim/bundle/ack.vim"]
+	path = .config/nvim/bundle/ack.vim
+	url = git@github.com:mileszs/ack.vim.git
+[submodule ".config/nvim/bundle/ctrlp.vim"]
+	path = .config/nvim/bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
+[submodule ".config/nvim/bundle/emmet-vim"]
+	path = .config/nvim/bundle/emmet-vim
+	url = git@github.com:mattn/emmet-vim.git
+[submodule ".config/nvim/bundle/indentLine"]
+	path = .config/nvim/bundle/indentLine
+	url = git@github.com:Yggdroot/indentLine.git
+[submodule ".config/nvim/bundle/syntastic"]
+	path = .config/nvim/bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
+[submodule ".config/nvim/bundle/vim-airline"]
+	path = .config/nvim/bundle/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule ".config/nvim/bundle/vim-fugitive"]
+	path = .config/nvim/bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule ".config/nvim/bundle/vim-go"]
+	path = .config/nvim/bundle/vim-go
+	url = git@github.com:fatih/vim-go.git
+[submodule ".config/nvim/bundle/yajs.vim"]
+	path = .config/nvim/bundle/yajs.vim
+	url = git@github.com:othree/yajs.vim.git
+[submodule ".config/nvim/bundle/es.next.syntax.vim"]
+	path = .config/nvim/bundle/es.next.syntax.vim
+	url = git@github.com:othree/es.next.syntax.vim.git
+[submodule ".config/nvim/bundle/auto-pairs-gentle"]
+	path = .config/nvim/bundle/auto-pairs-gentle
+	url = git@github.com:vim-scripts/auto-pairs-gentle.git
+[submodule ".config/nvim/bundle/vim-tmux-navigator"]
+	path = .config/nvim/bundle/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
+[submodule ".config/nvim/bundle/vim-fish"]
+	path = .config/nvim/bundle/vim-fish
+	url = git@github.com:dag/vim-fish.git
+[submodule ".config/nvim/bundle/typescript-vim"]
+	path = .config/nvim/bundle/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule ".config/nvim/bundle/vim-js-pretty-template"]
+	path = .config/nvim/bundle/vim-js-pretty-template
+	url = git@github.com:Quramy/vim-js-pretty-template.git
+[submodule ".config/nvim/bundle/vim-javascript"]
+	path = .config/nvim/bundle/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule ".config/nvim/bundle/vim-jsx"]
+	path = .config/nvim/bundle/vim-jsx
+	url = git@github.com:mxw/vim-jsx.git
+[submodule ".config/nvim/bundle/vim-ruby"]
+	path = .config/nvim/bundle/vim-ruby
+	url = git@github.com:vim-ruby/vim-ruby.git
+[submodule ".config/nvim/bundle/vim-rails"]
+	path = .config/nvim/bundle/vim-rails
+	url = git@github.com:tpope/vim-rails.git
+[submodule ".config/nvim/bundle/vim-coffee-script"]
+	path = .config/nvim/bundle/vim-coffee-script
+	url = git@github.com:kchmck/vim-coffee-script.git
+[submodule ".config/nvim/bundle/psc-ide-vim"]
+	path = .config/nvim/bundle/psc-ide-vim
+	url = git@github.com:FrigoEU/psc-ide-vim.git
+[submodule ".config/nvim/bundle/purescript-vim"]
+	path = .config/nvim/bundle/purescript-vim
+	url = git@github.com:raichoo/purescript-vim.git
+[submodule ".config/nvim/bundle/elm-vim"]
+	path = .config/nvim/bundle/elm-vim
+	url = git@github.com:ElmCast/elm-vim.git
+[submodule ".config/nvim/bundle/vim-ruby-heredoc-syntax"]
+	path = .config/nvim/bundle/vim-ruby-heredoc-syntax
+	url = git@github.com:joker1007/vim-ruby-heredoc-syntax.git
+[submodule ".config/nvim/bundle/gruvbox"]
+	path = .config/nvim/bundle/gruvbox
+	url = git@github.com:morhetz/gruvbox.git
+[submodule ".config/nvim/bundle/nerdcommenter"]
+	path = .config/nvim/bundle/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule ".config/nvim/bundle/pgqsl.vim"]
+	path = .config/nvim/bundle/pgqsl.vim
+	url = git@github.com:exu/pgsql.vim.git
+[submodule ".config/nvim/bundle/deoplete.nvim"]
+	path = .config/nvim/bundle/deoplete.nvim
+	url = git@github.com:Shougo/deoplete.nvim.git
+[submodule ".config/nvim/bundle/deoplete-typescript"]
+	path = .config/nvim/bundle/deoplete-typescript
+	url = git@github.com:mhartington/deoplete-typescript.git
+[submodule ".config/nvim/bundle/deoplete-ternjs"]
+	path = .config/nvim/bundle/deoplete-ternjs
+	url = git@github.com:carlitux/deoplete-ternjs.git
+[submodule ".config/nvim/bundle/deoplete-ruby"]
+	path = .config/nvim/bundle/deoplete-ruby
+	url = git@github.com:fishbullet/deoplete-ruby.git
+[submodule ".config/nvim/bundle/deoplete-go"]
+	path = .config/nvim/bundle/deoplete-go
+	url = git@github.com:zchee/deoplete-go.git
+[submodule ".config/nvim/bundle/tsuquyomi"]
+	path = .config/nvim/bundle/tsuquyomi
+	url = git@github.com:Quramy/tsuquyomi.git
