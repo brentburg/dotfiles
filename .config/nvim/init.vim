@@ -26,9 +26,20 @@ augroup go_tabs
   autocmd Filetype go setlocal noexpandtab
 augroup END
 
+" Use tabs instead of spaces for Makefile
+augroup make_tabs
+  autocmd!
+  autocmd Filetype make setlocal noexpandtab
+augroup END
+
 augroup vue_ft
   autocmd!
   autocmd BufNewFile,BufRead *.vue set filetype=html
+augroup END
+
+augroup close_preview
+  autocmd!
+  autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 augroup END
 
 nnoremap <space> <Nop>
@@ -97,6 +108,9 @@ let g:deoplete#enable_at_startup = 1
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
 set wildignore+=*/node_modules/*
+
+" jsx
+let g:jsx_ext_required = 0
 
 function! CmdLine(str)
     exe "menu Foo.Bar :" . a:str

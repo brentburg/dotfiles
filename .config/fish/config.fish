@@ -1,8 +1,9 @@
 # env variables
 set -gx SHELL /usr/bin/fish
 set -gx GOPATH $HOME/go
-set -gx CHROME_BIN /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
+set -gx CHROME_BIN /usr/bin/google-chrome
 set -gx PATH ~/bin $PATH
+set -gx PATH /usr/local/go/bin $PATH
 set -gx PATH ~/go/bin $PATH
 set -gx PATH /usr/local/bin $PATH
 set -gx PATH ./node_modules/.bin $PATH
@@ -43,3 +44,42 @@ alias b 'bundle exec'
 alias pbcopy 'xclip -selection clipboard'
 alias pbpaste 'xclip -selection clipboard -o'
 alias dotfiles 'git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# ssh agent
+setenv SSH_ENV $HOME/.ssh/environment
+
+function start_agent                                                                                                                                                                    
+  echo "Initializing new SSH agent ..."
+  ssh-agent -c | sed 's/^echo/#echo/' > $SSH_ENV
+  echo "succeeded"
+  chmod 600 $SSH_ENV 
+  . $SSH_ENV > /dev/null
+  ssh-add
+end
+
+function test_identities                                                                                                                                                                
+  ssh-add -l | grep "The agent has no identities" > /dev/null
+  if [ $status -eq 0 ]
+    ssh-add
+    if [ $status -eq 2 ]
+      start_agent
+    end
+  end
+end
+
+if [ -n "$SSH_AGENT_PID" ] 
+  ps -ef | grep $SSH_AGENT_PID | grep ssh-agent > /dev/null
+  if [ $status -eq 0 ]
+    test_identities
+  end  
+else
+  if [ -f $SSH_ENV ]
+    . $SSH_ENV > /dev/null
+  end  
+  ps -ef | grep $SSH_AGENT_PID | grep -v grep | grep ssh-agent > /dev/null
+  if [ $status -eq 0 ]
+    test_identities
+  else 
+    start_agent
+  end  
+end

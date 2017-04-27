@@ -103,3 +103,6 @@
 [submodule ".config/nvim/bundle/tsuquyomi"]
 	path = .config/nvim/bundle/tsuquyomi
 	url = git@github.com:Quramy/tsuquyomi.git
+[submodule ".config/nvim/bundle/vim-terraform"]
+	path = .config/nvim/bundle/vim-terraform
+	url = git@github.com:hashivim/vim-terraform.git
