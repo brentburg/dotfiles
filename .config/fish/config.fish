@@ -45,6 +45,9 @@ alias pbcopy 'xclip -selection clipboard'
 alias pbpaste 'xclip -selection clipboard -o'
 alias dotfiles 'git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+# chruby
+source /usr/local/share/chruby/chruby.fish
+
 # ssh agent
 setenv SSH_ENV $HOME/.ssh/environment
 
