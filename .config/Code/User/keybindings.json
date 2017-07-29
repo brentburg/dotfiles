@@ -1,0 +1,46 @@
+[
+  { "key": "shift+enter",
+    "command": "extension.jumpy-word",
+    "when": "editorTextFocus"
+    },
+  { "key": "ctrl+k ctrl+enter",
+    "command": "extension.jumpy-line",
+    "when": "editorTextFocus"
+    },
+  { "key": "escape",
+    "command": "extension.jumpy-exit",
+    "when": "editorTextFocus && jumpy.isJumpyMode"
+    },
+  { "key": "ctrl+c",
+    "command": "removeSecondaryCursors",
+    "when": "editorHasMultipleSelections && editorTextFocus"
+    },
+  { "key": "ctrl+c",
+    "command": "removeSecondaryCursors",
+    "when": "editorHasMultipleSelections && editorTextFocus"
+    },
+  { "key": "ctrl+space",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+  { "key": "ctrl+shift+space",
+    "command": "selectPrevSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+  { "key": "ctrl+shift+]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+    },
+  { "key": "ctrl+shift+[",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+    },
+  { "key": "ctrl+j",
+    "command": "search.action.focusActiveEditor",
+    "when": "terminalFocus"
+    },
+  { "key": "ctrl+j",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorTextFocus" 
+    }
+ ]
