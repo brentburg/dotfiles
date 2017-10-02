@@ -47,6 +47,7 @@ alias dotfiles 'git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # chruby
 source /usr/local/share/chruby/chruby.fish
+chruby ruby-2.4.1
 
 # ssh agent
 setenv SSH_ENV $HOME/.ssh/environment

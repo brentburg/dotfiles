@@ -1,81 +1,108 @@
-// Place your settings in this file to overwrite the default settings
 {
-    "editor.renderWhitespace": "boundary",
-    "editor.rulers": [80, 120],
-    "editor.fontSize": 14,
-    "editor.tabSize": 2,
-    "editor.fontFamily": "Office Code Pro",
-    "editor.wordWrap": true,
-    "workbench.editor.showTabs": false,
-    "terminal.integrated.shell.linux": "/usr/bin/fish",
-    "terminal.integrated.commandsToSkipShell": [
-        "editor.action.toggleTabFocusMode",
-        "workbench.action.debug.continue",
-        "workbench.action.debug.restart",
-        "workbench.action.debug.run",
-        "workbench.action.debug.start",
-        "workbench.action.debug.stop",
-        "workbench.action.showCommands",
-        "workbench.action.terminal.clear",
-        "workbench.action.terminal.copySelection",
-        "workbench.action.terminal.focus",
-        "workbench.action.terminal.focusNext",
-        "workbench.action.terminal.focusPrevious",
-        "workbench.action.terminal.kill",
-        "workbench.action.terminal.new",
-        "workbench.action.terminal.paste",
-        "workbench.action.terminal.runSelectedText",
-        "workbench.action.terminal.scrollDown",
-        "workbench.action.terminal.scrollDownPage",
-        "workbench.action.terminal.scrollToBottom",
-        "workbench.action.terminal.scrollToTop",
-        "workbench.action.terminal.scrollUp",
-        "workbench.action.terminal.scrollUpPage",
-        "workbench.action.terminal.toggleTerminal",
-        "workbench.action.togglePanel"
-    ],
-    "files.exclude": {
-        "**/.git": false
-    },
-    "workbench.activityBar.visible": false,
-    "window.zoomLevel": 0,
-    "typescript.check.tscVersion": false,
-    "window.menuBarVisibility": "toggle",
-    "vim.otherModesKeyBindingsNonRecursive": [
+  // Place your settings in this file to overwrite the default settings
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80, 120],
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Office Code Pro",
+  "editor.wordWrap": "on",
+
+  "workbench.editor.showTabs": false,
+  "terminal.integrated.shell.linux": "/usr/bin/fish",
+  "terminal.integrated.commandsToSkipShell": [
+    "editor.action.toggleTabFocusMode",
+    "workbench.action.debug.continue",
+    "workbench.action.debug.restart",
+    "workbench.action.debug.run",
+    "workbench.action.debug.start",
+    "workbench.action.debug.stop",
+    "workbench.action.showCommands",
+    "workbench.action.terminal.clear",
+    "workbench.action.terminal.copySelection",
+    "workbench.action.terminal.focus",
+    "workbench.action.terminal.focusNext",
+    "workbench.action.terminal.focusPrevious",
+    "workbench.action.terminal.kill",
+    "workbench.action.terminal.new",
+    "workbench.action.terminal.paste",
+    "workbench.action.terminal.runSelectedText",
+    "workbench.action.terminal.scrollDown",
+    "workbench.action.terminal.scrollDownPage",
+    "workbench.action.terminal.scrollToBottom",
+    "workbench.action.terminal.scrollToTop",
+    "workbench.action.terminal.scrollUp",
+    "workbench.action.terminal.scrollUpPage",
+    "workbench.action.terminal.toggleTerminal",
+    "workbench.action.togglePanel"
+  ],
+  "files.exclude": {
+    "**/.git": false
+  },
+  "workbench.activityBar.visible": false,
+  "window.zoomLevel": 1,
+  "window.menuBarVisibility": "toggle",
+  "vim.otherModesKeyBindingsNonRecursive": [
+    {
+      "before": ["ctrl+w", "c"],
+      "after": [],
+      "commands": [
         {
-            "before": ["ctrl+w", "c"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeEditorsInGroup",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [":"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.showCommands",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": ["leader", "w"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.save",
-                    "args": []
-                }
-            ]
+          "command": "workbench.action.closeEditorsInGroup",
+          "args": []
         }
-    ],
-    "vim.leader": "\\",
-    "workbench.colorTheme": "Dracula",
-    "ruby.rctComplete.commandPath": "/home/brent/bin/rct-complete",
-    "vim.disableAnnoyingNeovimMessage": true,
-    "editor.minimap.enabled": false
+      ]
+    },
+    {
+      "before": [":"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.showCommands",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["leader", "w"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["ctrl+r"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "vim.leader": "\\",
+  "workbench.colorTheme": "Dracula",
+  "ruby.rctComplete.commandPath": "/home/brent/bin/rct-complete",
+  "vim.disableAnnoyingNeovimMessage": true,
+  "editor.minimap.enabled": false,
+  "extensions.ignoreRecommendations": false,
+  "terminal.integrated.scrollback": 10000,
+  "prettier.semi": false,
+  "prettier.typescriptEnable": ["typescript", "typescriptreact"],
+  "editor.formatOnSave": true,
+  "workbench.sideBar.location": "right",
+  "gitlens.blame.line.enabled": false
 }

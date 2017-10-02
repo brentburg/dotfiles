@@ -1,16 +1,4 @@
 [
-  { "key": "shift+enter",
-    "command": "extension.jumpy-word",
-    "when": "editorTextFocus"
-    },
-  { "key": "ctrl+k ctrl+enter",
-    "command": "extension.jumpy-line",
-    "when": "editorTextFocus"
-    },
-  { "key": "escape",
-    "command": "extension.jumpy-exit",
-    "when": "editorTextFocus && jumpy.isJumpyMode"
-    },
   { "key": "ctrl+c",
     "command": "removeSecondaryCursors",
     "when": "editorHasMultipleSelections && editorTextFocus"
@@ -42,5 +30,8 @@
   { "key": "ctrl+j",
     "command": "workbench.action.terminal.focus",
     "when": "editorTextFocus" 
+    },
+  { "key": "ctrl+shift+=",
+    "command": "workbench.action.toggleMaximizedPanel"
     }
  ]
