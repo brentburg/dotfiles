@@ -102,7 +102,7 @@
   "terminal.integrated.scrollback": 10000,
   "prettier.semi": false,
   "prettier.typescriptEnable": ["typescript", "typescriptreact"],
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "workbench.sideBar.location": "right",
   "gitlens.blame.line.enabled": false
 }
