@@ -20,6 +20,9 @@ set splitright
 
 let loaded_matchparen = 1
 
+" Config mouse
+set mouse=a
+
 " Use tabs instead of spaces for golang
 augroup go_tabs
   autocmd!
@@ -95,7 +98,6 @@ autocmd BufWinEnter,WinEnter term://* startinsert
 autocmd BufLeave term://* stopinsert
 
 colorscheme gruvbox
-let g:gruvbox_contrast_dark='hard'
 set background=dark
 
 " Add spaces after comment delimiters by default

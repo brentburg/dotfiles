@@ -106,3 +106,6 @@
 [submodule ".config/nvim/bundle/vim-terraform"]
 	path = .config/nvim/bundle/vim-terraform
 	url = git@github.com:hashivim/vim-terraform.git
+[submodule ".config/nvim/bundle/dracula-theme"]
+	path = .config/nvim/bundle/dracula-theme
+	url = git@github.com:dracula/vim.git
